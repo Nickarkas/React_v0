@@ -4,15 +4,24 @@ import './App.css';
 //import ParentComp from './components/ParentComp';
 import { Component } from 'react';
 import Propiedades from './components/Propiedades';
-//import Efecto from './components/Hooks/Efecto';
-//import Estado from './components/Hooks/Estado'
+//import Efecto from './components/hooks/Efecto';
+//import Estado from './components/hooks/Estado'
 import Estadoo from './components/Estadoo';
 import RenderizadoCondicional from './components/RenderizadoCondicional';
 import {EventosES6, EventosES7} from './components/Eventos';
 import { MasSobreEventos } from './components/MasEventos';
 import Padre from './components/ComunicacionCompontentes';
 import CicloVida from './components/CicloVida';
-
+import AjaxApis from './components/AjaxApis';
+import Contador from './components/useContador';
+import ScrollHooks from './components/useScroll';
+import RelojHooks from './components/useReloj';
+import AjaxHooks from './components/useAjaxHooks';
+import HooksPersonalizados from './components/useHooksPersonalizados';
+import Referencias from './components/Referancias';
+import Formularios from './components/useFormularios';
+import Estilos from './components/Estilos';
+import ComponentesEstilizados from './components/ComponentesEstilizados';
 
 class App extends Component {
   render() {
@@ -41,6 +50,26 @@ class App extends Component {
           <Padre />
           <br /><hr />
           <CicloVida />
+          <br /><hr />
+          <AjaxApis />
+          <br /><hr />
+          <Contador titulo="Seguidores"/>
+          <br /><hr />
+          <ScrollHooks />
+          <br /><hr />
+          <RelojHooks />
+          <br /><hr />
+          <AjaxHooks />
+          <br /><hr />
+          <HooksPersonalizados />
+          <br /><hr />
+          <Referencias />
+          <br /><hr />
+          <Formularios />
+          <br /><hr />
+          <Estilos />
+          <br /><hr />
+          <ComponentesEstilizados />
           <br /><hr />
       </div>
     )

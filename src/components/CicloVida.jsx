@@ -2,9 +2,9 @@ import React, {Component} from "react";
 
 
 export class Reloj extends Component {
-    constructor(props){
-        super(props);
-    }
+    //constructor(props){
+        //super(props);
+    //}
 
     render() {
         return (
@@ -21,7 +21,7 @@ export class Reloj extends Component {
 export default class CicloVida extends Component{
     constructor(props) {
         super(props)
-        console.log(0," componente se inicializa, aun NO esta en el DOM")
+        //console.log(0," componente se inicializa, aun NO esta en el DOM")
     //estado
     this.state = {
         //hora local
@@ -35,18 +35,18 @@ export default class CicloVida extends Component{
     }
     //componente se "Monta en el DOM"
     componentDidMount() {
-        console.log(1, "El componente ya esta en el DOM");
+        //console.log(1, "El componente ya esta en el DOM");
     }
     //pasa las propiedades del componente jusot antes d modificar el estado y mostrarnoslo
     //puede pasarse dos objetos, las PROPS previas y STATE previo
     componentDidUpdate(prevProps,prevStates) {
-        console.log(2, "El estado o las props han cambiado");
-        console.log(prevProps); //devulve objeto vacio xk no hay props
-        console.log(prevStates); //imprime un segundo antes del reloj visto por web
+        //console.log(2, "El estado o las props han cambiado");
+        //console.log(prevProps); //devulve objeto vacio xk no hay props
+        //console.log(prevStates); //imprime un segundo antes del reloj visto por web
     }
     //aparecera cuando ELIMINAMOS el componente
     componentWillUnmount() {
-        console.log(3, "El componente desaparece del DOM");
+        //console.log(3, "El componente desaparece del DOM");
     }
 
     tictac = () => {
@@ -75,7 +75,7 @@ export default class CicloVida extends Component{
 
     render() {
         //en consola vemos como se invoca una vez por segundo, segun el intervalo que redibuja la hora por pantalla
-        console.log(4, "componente se dibuja (o redibuja por cambio en el DOM)")
+        //console.log(4, "componente se dibuja (o redibuja por cambio en el DOM)")
         return (
             <>
                 <h2>Ciclo de Vida de los Componentes de Clase</h2>
